@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vue Components</title>
+<style>
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	padding:0;
+}
+.slider{
+	overflow:hidden;
+	position:relative;
+}
+.viewport{
+	width:300%;
+	display:flex;
+	transition:all .4s;
+}
+.slider .controls{
+	position:absolute;
+	left:0;
+	top:50%;
+	width:100%;
+	transform:translateY(-50%);
+	pointer-events:none;
+	display:flex;
+	justify-content:space-between;
+}
+.slider .controls i{
+	pointer-events:all;
+	cursor:pointer;
+	font-size:38px;
+}
+</style>
+<link rel="stylesheet" href="css/font-awesome.css" />
+</head>
+<body>
+<div id="root">
+<slider>
+	<slide><img src="img/slides/slide1.png" /></slide>
+	<slide><img src="img/slides/slide2.png" /></slide>
+	<slide><img src="img/slides/slide3.png" /></slide>
+</slider>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"></script>
+<script src="slider.js"></script>
+</body>
+</html>
