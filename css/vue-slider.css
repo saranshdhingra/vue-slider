@@ -1,0 +1,24 @@
+.vue-slider{
+	overflow:hidden;
+	position:relative;
+}
+.vue-slider .viewport{
+	width:300%;
+	display:flex;
+	transition:all .4s;
+}
+.vue-slider .controls{
+	position:absolute;
+	left:0;
+	top:50%;
+	width:100%;
+	transform:translateY(-50%);
+	pointer-events:none;
+	display:flex;
+	justify-content:space-between;
+}
+.vue-slider .controls i{
+	pointer-events:all;
+	cursor:pointer;
+	font-size:38px;
+}

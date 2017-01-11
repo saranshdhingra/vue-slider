@@ -1,6 +1,6 @@
 Vue.component('slider',{
 	template:`
-		<section class="slider">
+		<section class="vue-slider">
 			<div class="viewport grid" :style="{width:num*100+'%',marginLeft:marginLeft}">
 				<slot></slot>
 			</div>
